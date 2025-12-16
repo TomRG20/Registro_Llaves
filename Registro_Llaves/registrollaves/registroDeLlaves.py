@@ -2,7 +2,7 @@
 # Función: Este programa permite registrar la entrega y devolución de llaves de apartamentos y zonas comunes.
 # Autor: Tomás Rodríguez
 # Fecha: 25/06/2025
-# Versión: 1.1.0
+# Versión: 1.1.1
 
 import tkinter as tk
 from tkinter import ttk, messagebox
@@ -30,7 +30,7 @@ DIAS_ENTRE_BACKUPS = 15 # Días entre cada backup, CADA 15 DÍAS HARA UN BACKUP
 
 
 # Datos del programa para la sección "Acerca de"
-VERSION_PROGRAMA = "1.1.0"
+VERSION_PROGRAMA = "1.1.1"
 AUTOR_PROGRAMA = "Tomás Rodríguez" 
 ANIO_COPY0RIGHT = "2025"
 
@@ -104,7 +104,7 @@ for edificio in VALIDACION_PUERTAS:
 llaves_generales.extend(['Grupo de Presión', 'Anexo D-E', 'Puerta Garaje', 'Magnetica', 'Puerta peatonal Garaje', 'Entrada Garaje','Salida Garaje','Puerta Mágnetica Puerto Banús', 'Puerta Luces Garaje', 'Puerta Magnetica Playa', 'Acceso a Patios C1 y C2', 'Cuadro Piscina', 'Cuarto Motores Piscina',
                         'Pozo', 'Caseta Jardineros', 'Candado Cancelas Anexo a Oficinas', 'Cuarto Desayuno Limpiadoras', 'Caseja Garaje CD', 'Armario Electrico Puertas Garaje', 'Caseta de Riego Piscinas Cádiz', 'Acceso nº 6', 'Acceso nº 5', 'Acceso nº 4', 'Cuadro de Luz Jardin Acceso Gym',
                         'Cuadro Eléctrico Jardin', 'Zonas comunes de uso para Jardinero', 'Caseta Vigilante Parking', 'Acceso a Casa Cádiz por Córdoba', 'Centralización Telefónica Garaje', 'Casetones cuadro de luz Piscinas', 'Caseta Piscinas', 'Cuadro Piscina Nuevo', 'Puerta de Emergencia',
-                        'Arqueta Zona Pozo','Mastiles','Maestra Candados', 'Caseta Transformador Garaje', 'Central de Incendios', 'llave Ascensores','Cuarto de Luz Avenida Princial', 'Cajetines Ascensores', 'Armario Registro Eléctrico Casas Córdoba'])
+                        'Arqueta Zona Pozo','Mastiles','Maestra Candados', 'Caseta Transformador Garaje', 'Central de Incendios', 'llave Ascensores','Cuarto de Luz Avenida Princial', 'Cajetines Ascensores', 'Candado Cuadro Patio', 'Armario Registro Eléctrico Casas Córdoba'])
 
 # Ordenar cada lista por separado
 llaves_edificios.sort()
@@ -1919,3 +1919,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = AppRegistroLlaves(root)
     root.mainloop()
+
